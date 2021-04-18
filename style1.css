@@ -1,0 +1,251 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+background-image:url(./Images/arriere_plan2.bmp) ;
+background-size: cover;
+background-position: center;
+background-attachment: fixed;
+
+font-family: sans-serif;
+}
+
+.menu-bar
+{
+    background: rgb(31, 86, 138);
+    text-align: center;
+}
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: chocolate;
+}
+.menu-bar ul img{
+    right: 300;
+    height: 8vh;
+    width: 120px;
+    cursor: pointer;
+    position: relative;
+    
+}
+.menu-bar ul li
+{
+    width: 120px;
+    margin:10px ;
+    padding: 15px;
+
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+.active, .menu-bar ul li:hover
+{
+    background: #2bab0d ;
+    border-radius: 3px;
+}
+.menu-bar .fa
+{
+    margin-right: 8px;
+}
+
+.sub-menu-1
+{
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background: #47723d;
+    margin-top: 15px;
+    margin-left: -15px;
+    z-index: 5;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color: aqua;
+}
+
+.fa-angle-right
+{
+    color: rgb(241, 233, 233);
+    float: right;
+}
+
+.sub-menu-2
+{
+    display: none;
+}
+.hover-me:hover .sub-menu-2
+{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: #47723d;
+
+}
+
+.sub-menu-3
+{
+    display: none;
+}
+
+.hover-me2:hover .sub-menu-3
+{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: #47723d;
+
+}
+
+.twitter-timeline
+{
+    float:right;
+    position: relative;
+    z-index: 3;
+    
+   
+}
+
+.video1
+{
+    position:relative;
+    right: 0px;
+    top: 0px;
+    
+    z-index: 3;
+   
+    
+}
+
+
+main .box {
+    width: 500px;  /*portion relative (en pixel) de l'écran utilisée par cette partie*/
+    height: auto; /*ajustation de la hauteur en automatique*/
+    padding: 30px;
+    background: #fff;
+    border-radius: 20px;  /*Arrondissement des angles*/
+    margin-bottom: -100px; /*Marge par rapport au bas de la fenetre*/
+    float: left;
+    margin-left: 550px;
+    margin-top: 110px;
+    
+}
+.box h3 strong {
+    color: #5260ad; /*Couleur du titre ( Connexion )*/
+    font-weight: 900;
+}
+.formBloc h3 {
+    color: #666; 
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 45px;
+}
+
+.formBloc .formGroupe {
+    position: relative;
+    display: flex;
+    margin-bottom: 50px;
+}
+.formBloc .formGroupe label {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 20px;
+    transition: 0.4s ease-out; /*Temps de la transition du boutton*/
+}
+.formBloc .formGroupe input {
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 3px solid #aaa;
+    color: #666;
+    font-size: 20px;
+    transition: 0.4s ease-out; /*Temps de la transition du boutton*/
+}
+
+.formGroupe:nth-child(4) { /*3 eme enfant de FormGroupe*/
+    margin-bottom: 65px;
+    justify-content: center;
+}
+.formBloc .formGroupe .buttonSub {
+    display: block;
+    width: auto;
+    padding: 15px 60px;
+    border: 3px solid #8b97d7;
+    border-radius: 999px;
+    background-image: linear-gradient(to right, transparent 50%, #5260ad 50%, #8b97d7);  /*Transition de la couleur de de gauche a droite*/
+    background-size: 200%;
+    color: #038003;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;  /*Changement du curseur au passage de la souris sur le boutton LOGIN*/
+}
+
+.formBloc .formGroupe .buttonSub:hover {  /*Changement de la couleur au passage de la souris*/
+    color: #fff;
+    background-position: 100%;
+    border: 3px solid #fff;
+}
+
+.formBloc .mdpPerdu a {
+    color: #8b97d7;
+    font-size: 16px;
+    font-weight: 400;
+    text-decoration: none;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+}
+.formBloc .mdpPerdu a:hover {  /*Changement de la couleur au passage de la souris*/
+    border-bottom-color: #8b97d7;
+}
+
+/* Animation */
+
+.formBloc .formGroupe:focus-within label,
+.formBloc .formGroupe.animation label {
+    top: 0px;
+    transform: translateY(-100%);
+    color: #8b97d7;
+}
+
+.formBloc .formGroupe:focus-within input,
+.formBloc .formGroupe.animation input {
+    border-bottom-color: #8b97d7;
+}   

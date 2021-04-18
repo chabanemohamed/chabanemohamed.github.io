@@ -1,0 +1,217 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+background-image:url(arriere_plan2.bmp) ;
+background-size: cover;
+background-position: center;
+
+font-family: sans-serif;
+}
+
+.menu-bar
+{
+    background: rgb(31, 86, 138);
+    text-align: center;
+}
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: chocolate;
+}
+.menu-bar ul img{
+    right: 300;
+    height: 8vh;
+    width: 120px;
+    cursor: pointer;
+    position: relative;
+    
+}
+.menu-bar ul li
+{
+    width: 120px;
+    margin:10px ;
+    padding: 15px;
+
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color: white;
+}
+.active, .menu-bar ul li:hover
+{
+    background: #2bab0d ;
+    border-radius: 3px;
+}
+.menu-bar .fa
+{
+    margin-right: 8px;
+}
+
+.sub-menu-1
+{
+    display: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background: #47723d;
+    margin-top: 15px;
+    margin-left: -15px;
+    z-index: 5;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color: aqua;
+}
+
+.fa-angle-right
+{
+    color: rgb(241, 233, 233);
+    float: right;
+}
+
+.sub-menu-2
+{
+    display: none;
+}
+.hover-me:hover .sub-menu-2
+{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: #47723d;
+
+}
+
+.sub-menu-3
+{
+    display: none;
+}
+
+.hover-me2:hover .sub-menu-3
+{
+    position: absolute;
+    display: block;
+    margin-top: -40px;
+    margin-left: 140px;
+    background: #47723d;
+
+}
+
+.twitter-timeline
+{
+    float:right;
+    position: fixed;
+    
+   
+}
+
+.video1
+{
+    position:relative;
+    right: 0px;
+    top: 0px;
+   
+    
+}
+
+.graphe5
+{
+    position:fixed;
+    left: 0px;
+    top: 50px;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+main {
+    font-family:"trebuchet ms",sans-serif;
+    font-size:90%;
+    float: right;
+    position: right;
+}
+form {
+    background-color:#28149c   ;
+    padding:10px;
+    width : 317px; 
+    height: -450px;
+
+    float: right;
+    position: right;
+}
+fieldset {
+    color:#635d5c;
+    padding: 0px 0px 0px 0px;
+    margin-bottom:163px;
+    border:1px solid ;
+}
+legend {
+    color:#FFFFFF;
+    font-weight:bold
+}
+label {
+    color:#ffffff;
+    margin-top:130px;
+    display:block;
+}
+label.inline {
+    display:inline;
+    margin-right:100px;
+}
+
+input, textarea, select, option {
+    background-color:#FFFFFF;
+    }
+    input, textarea, select {
+            padding:10px;
+            border:2px solid #f1eded ;
+            border-radius:4px;
+            width:290px;
+            box-shadow:1px 1px 2px  inset;
+}
+select {
+    margin-top:10px;
+    }
+    input[type=radio] {
+            background-color:transparent;
+            border:none;
+            width:100px;
+}
+input[type=submit], input[type=reset] {
+    width:100px;
+    margin-left:80px;
+    box-shadow:1px 1px 1px #8f3535;
+    cursor:pointer;
+    margin-bottom: 10px;
+}
+
